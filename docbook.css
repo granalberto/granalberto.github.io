@@ -127,6 +127,68 @@ input.center {
 }
 
 
+.revhistory {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 0.875rem;
+  color: #555;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Force override of inline styles from DocBook */
+.revhistory > table[style] {
+  border: none !important;
+  border-style: none !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  border-collapse: collapse !important;
+  background: none !important;
+}
+
+/* Reset all default styles and reapply clean layout */
+.revhistory table {
+  all: unset;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.revhistory th,
+.revhistory td {
+  text-align: left;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Remove border after version/date row */
+.revhistory tr:nth-child(even) td {
+  border-bottom: none;
+}
+
+/* Add border only after description row */
+.revhistory tr:nth-child(odd) td {
+  border-bottom: 1px solid #ddd;
+}
+
+.revhistory tr:first-child th {
+    font-weight: 600;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Header row styling */
+.revhistory th {
+  font-weight: 600;
+  color: #333;
+}
+
+
+
 /* Desktop sizes */
 @media (min-width: 600px) {
     ol.twocol {
