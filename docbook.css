@@ -187,7 +187,16 @@ input.center {
   color: #333;
 }
 
-
+.variablelist .term {
+    display: inline-block;
+    background-color: #f2f2f2;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    border-radius: 6px;
+}
 
 /* Desktop sizes */
 @media (min-width: 600px) {
